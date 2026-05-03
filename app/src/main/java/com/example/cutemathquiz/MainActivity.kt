@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.cutemathquiz
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -32,7 +32,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.myapplication.ui.theme.MyApplicationTheme
+import com.example.cutemathquiz.ui.theme.CuteMathQuizTheme
 import kotlin.random.Random
 
 import androidx.compose.ui.graphics.Brush
@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MyApplicationTheme {
+            CuteMathQuizTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     MathQuizApp(modifier = Modifier.padding(innerPadding))
                 }
@@ -349,7 +349,7 @@ fun MathQuizApp(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun MathQuizAppPreview() {
-    MyApplicationTheme {
+    CuteMathQuizTheme {
         MathQuizApp()
     }
 }
